@@ -1,0 +1,33 @@
+/*  ENCONTRE AQUI: 
+
+- ANIMAÇÕES DE MOVIMNETO
+
+*/
+
+
+
+/*Cor de fundo do menu descktop quando ha scroll*/
+.back-color-menu {
+    background-color: #2A2A2A;
+    box-shadow: rgba(0, 0, 0, 0.592) 0px 2px 10px !important;
+    transition: 1s;
+}
+
+/*TAGs personalzadas para atribuir trasition e trabsforme as seções*/
+[data-anime] {
+    opacity: 0;
+    transition: 1s;
+}
+
+[data-anime="up"] {
+    transform: translate3d(0, 100%, 0);
+}
+
+[data-anime="left"] {
+    transform: translate3d(-100%, 0, 0);
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}

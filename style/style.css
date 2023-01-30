@@ -1,0 +1,50 @@
+/*  ENCONTRE AQUI: 
+
+- Folhas de estlos como cores e imagens de backgrouns
+- tamanho de iframes
+- ajustes de posicionamento - O MOTEL
+
+*/
+
+/*imagem dde background do hero*/
+#hero {
+    background-image: url(/img/backgroudHero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*cor de background da seção*/
+#suites {
+    background-color: #7A7266;
+    height: auto;
+    padding: 80px 0px;
+}
+
+/*cor de background da seção*/
+#o-motel,
+#Localizacao{
+    background: #EEEEEE;
+}
+
+/*para o container de texto ficar abaixo em relação a imagem na seção "O MOTEL"*/
+.o-motel-position {
+    transform: translateY(30px);
+}
+
+/*cor de background da seção*/
+#cortesias {
+    background-color: #6C6359;
+}
+
+/*tamanhod do iframe */
+.loc-information {
+    height: 290px;
+    width: 500px;
+}
+
+/*cor de background da seção*/
+
+#footer {
+    background: #2A2A2A;
+}

@@ -1,0 +1,165 @@
+/*  ENCONTRE AQUI:
+
+    a maior parte da responsividade esta nas classes bootstrap
+    aqui há algumas mediaQuerys para aperfeiçoar a responsividade do projeto
+
+*/
+
+@media (max-width: 991px) {
+    /* retirando o botão extra do menu descktop*/
+    .button-reserv-menu-desktop {
+        display: none;
+    }
+
+    /* tamanho e posição do menu mobile container*/
+    .menu-mobile-container {
+        position: absolute;
+        height: 100vh;
+        width: auto;
+    }
+
+        /* cores e sombras e posição*/
+        .menu-mobile {
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            background-color: #2A2A2A;
+            box-shadow: rgba(0, 0, 0, 0.887) 0px -1px 10px !important;
+
+        }
+
+        /* estilo do botão mobile*/
+        .button-menu-mobile {
+            background-color: #7A7266 !important;
+            color: white !important;
+        }
+        
+        /* estilo do botão mobile hover*/
+        .button-menu-mobile:hover {
+            background-color: #6b6357 !important;
+        }
+
+    /* para no mobile ficar colado com a seção de cima*/
+    #o-motel {
+        padding: 0 !important;
+    }
+
+        /* para a img no mobile ficar em cima e o texto em baixo */
+        .cont-o-motel {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            margin: 0 !important;
+            padding: 0 !important;
+
+        }
+
+        /* para a img no mobile pegar toda a tela */
+        .img-o-motel {
+            width: 100vw !important;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+
+        /* texto sobre o motel */
+        .o-motel-paragraph {
+            width: 85vw !important;
+            transform: translateY(-50px);
+        }
+
+    /* altura minima no modile do iframe mapa*/    
+    .iframe-map{
+        min-height: 390px;
+    }
+
+    /* altura no modile do container que fica o link do guia de moteis */   
+    .container-rights {
+        height: 145px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    /* fonte do nome da marca */   
+    .brand-name{
+        font-size: 4rem !important;
+    }
+
+    /* subir as informações do hero para ficar no meio no mobile */
+    .container-hero{
+        transform: translateY(-100px);
+    }
+
+    /* cor mais escura do motão na seção "O MOTEL" comparado ao do descktop */
+    .button-o-motel{
+        background-color: #5A493E !important;
+        transition: .5s;
+    }
+    
+    /* estilod de posicionamento do footer mobile */
+    .style-footer-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    /* conatiner logo mobile e borda branca */
+    .logo-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        border-bottom: solid 2px white !important;
+        margin-bottom: 50px;
+    }
+
+    /*logo mobile */
+    .logo-mobile {
+        width: 70vw;
+    }
+
+    /*Esse estilo faz referencia a elementos que devem ser retirados da pagina qaundo chegar ap tamanho de 450px*/
+    .dis-none {
+        display: none;
+    }
+
+    /*estilo botão de reserva e de suites*/
+    .button-fotter-mobile-reserv-suítes {
+        text-align: center;
+        background-color: #7A7266;
+        width: 90vw;
+        padding: 20px 0px;
+        transition: .5s;
+    }
+
+        /*animação hover botão de reserva e de suites*/
+        .button-fotter-mobile-reserv-suítes:hover {
+            background-color: #6b6357 !important;
+        }
+
+     /*estilo botão whatsapp e email*/
+    .button-fotter-mobile-whats-contact {
+        text-align: center;
+        border: solid 2px white !important;
+        width: 90vw;
+        padding: 20px 0px;
+        transition: .5s;
+    }
+        /*animação hover botão whatsapp e email*/
+        .button-fotter-mobile-whats-contact:hover {
+            text-align: center;
+            border: solid 2px white !important;
+            background-color: rgba(255, 255, 255, 0.123);
+            width: 90vw;
+            padding: 20px 0px;
+        }
+
+    /*deixa a fonte do whatsapp e email com wwight*/
+    .button-fotter-mobile-whats-contact>small {
+        font-weight: normal !important;
+    }
+
+}

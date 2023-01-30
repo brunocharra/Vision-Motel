@@ -1,0 +1,171 @@
+/*Referente a estilização do slide no pc*/
+/*estilo referente a classe que a biblioteca add*/
+/*estilo que aumenta todos os elementos proporcionalmente*/
+.slider {
+  display: flex;
+  scale: 2;
+  margin: 150px 0px 200px 0;
+}
+
+/*estilo referente a classe que a biblioteca add*/
+/*estilo referente as imagens do fundo que ficam opacas e menores*/
+.slick-slide>div {
+  transform: scale(.7);
+  transition: transform .5s cubic-bezier(.4, 0, .2, 1);
+  opacity: .5;
+}
+
+/*ao trazer para a frente o elemento recebe esse conjunto de estilo para que fique no tamanho normal/
+/*ele volta ter a opacidade normal*/
+.slick-center>div {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/*estilo que representa a padronização dos slides*/
+.slider__item {
+  height: 300px;
+  overflow-x: hidden;
+}
+
+/*estilo interno da imagem*/
+.slider__item>img {
+  width: 100%;
+  height: auto;
+  transform: translateY(-50px);
+}
+
+/*como todo o conjunto do slider esta com escala de 2 para a tag de informação não ficar desproporcional é utilizada a escala de .55*/
+.container-info-slid {
+  transform: scale(.55) !important;
+  padding: 25px;
+  position: absolute;
+}
+
+/*posicionamento das setas*/
+.arrows {
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+  position: absolute;
+}
+
+/*cor de fundo das setas*/
+.arrows>div>img {
+  background-color: rgba(255, 255, 255, 0.505);
+}
+
+/*underline no link suites*/
+.link-look-all-suites{
+  text-decoration: underline !important;
+  font-size: 1.4rem !important;
+}
+
+ /*as medias seguem o mesmo padrão sempre de posiconamento e tamanhos*/
+@media (max-width:1200px) {
+  /*para a tag de inf se manter no lugar correto*/
+  .slider__item>img {
+    transform: translateY(-50px);
+  }
+
+  /*para a tag de inf ficar com o tamanho ideal*/
+  .container-info-slid {
+    transform: scale(.50) !important;
+    width: 350px;
+  }
+
+  /*para a o slide ficar com o tamanho ideal*/
+  .slider {
+    scale: 2.3;
+    margin: 50px 0px 150px 0;
+  }
+
+}
+
+@media (max-width:1024px) {
+  /*para atag de inf ficar com o tamanho ideal*/
+  .container-info-slid {
+    transform: scale(.70) !important;
+  }
+
+  /*para a o slide ficar com o tamanho ideal*/
+  .slider {
+    scale: 1.5;
+    margin: 100px 0px 100px 0;
+  }
+
+  /*para largura da imagem*/
+  .slider__item>img {
+    width: 70% !important;
+    height: auto;
+  }
+
+  /*posicionamento setas*/
+  .arrows {
+    justify-content: space-between;
+    width: 90vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .slider__item>img {
+    transform: translateY(-80px);
+  }
+
+  .container-info-slid {
+    text-align: center;
+    transform: scale(.5) !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    gap: 20px;
+  }
+
+  .slider {
+    scale: 1.5;
+    margin: 20px 0px 50px 0;
+  }
+
+  .slider__item>img {
+    width: 70% !important;
+    height: auto;
+  }
+
+}
+
+@media (max-width: 500px) {
+  .slider {
+    display: flex;
+    scale: 1.2;
+    margin: 150px 0px 200px 0;
+  }
+
+  .container-info-slid {
+    transform: scale(.9) !important;
+    gap: 30px;
+    height: 200px;
+    width: 300px;
+  }
+
+  .button-inf-slid{
+    margin-top: 20px;
+  }
+
+  .slider__item {
+    height: 550px;
+  }
+
+  .slider__item>img {
+    width: 750px !important;
+    height: 100%;
+    transform: translateY(-100px);
+
+  }
+  
+  .slider {
+    margin: 150px 0px 150px 0;
+  }
+
+}

@@ -1,0 +1,104 @@
+/*  ENCONTRE AQUI: estilos que precisam ser repetidos dentro do código
+
+- Fontes utilizadas nos titulos e paragrafos
+- Cores de botões
+
+*/
+
+/*-------------- DESTINADO AS FONTES DO PROJETO -------------*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+
+html {
+    width: 100%;
+}
+
+body {
+    font-size: 62.5%;
+
+}
+
+/*cor padrão*/
+*,
+button-menu-mobile{
+    color: #2A2A2A !important;
+}
+
+/*tipo de fonte dos titulos*/
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Playfair Display', serif;
+}
+
+/*tamanho de fonte dos titulos*/
+h1 {
+    font-size: 4.5rem !important;
+}
+
+h2 {
+    font-size: 2.5rem !important;
+}
+
+h3 {
+    font-size: 1.7rem !important;
+}
+
+/*tipo de fonte dos paragrafos, linkis e li*/
+p,
+li,
+a {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*tamanho de fonte do paragrafo*/
+p {
+    font-size: 1rem;
+}
+
+/*Este estilo esta refeerenciando - GUIA DE MOTÉIS SITES │ GUIA DE MOTÉIS ©  */
+.all-rights {
+    font-family: 'Titillium Web', sans-serif;
+    text-transform: uppercase;
+}
+
+/*deixa os links com cursor pointer*/
+a {
+    cursor: pointer;
+    font-size: 1rem !important;
+}
+
+/*cores dos botões e suas animações de hover*/
+.button-color-beige {
+    background-color: #7A7266 !important;
+    transition: .5s;
+}
+
+    .button-color-beige:hover {
+        background-color: #6b6357 !important;
+    }
+
+.button-color-brown {
+    background-color: #5A493E !important;
+    transition: .5s;
+}
+
+    .button-color-brown:hover {
+        background-color: #463830 !important;
+    }
+
+.button-color-dark-brown {
+    background-color: #2A2A2A !important;
+    transition: .5s;
+}
+
+    .button-color-dark-brown:hover {
+        background-color: #1e1e1e !important;
+    }
+
+/*Este estilo esta refeerenciando as SOMBRAS da pagina */
+.box-sh {
+    box-shadow: rgba(0, 0, 0, 0.336) 0px 2px 10px !important;
+}
